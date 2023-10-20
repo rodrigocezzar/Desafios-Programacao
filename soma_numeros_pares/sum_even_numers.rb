@@ -9,7 +9,7 @@ def sum_even
   numbers_even = numbers.select(&:even?)
 
   total = numbers_even.reduce(0) { |acumulador, numero| acumulador + numero }
-  puts total
+  puts "A soma dos números pares até #{number} é #{total}."
 end
 
 sum_even
