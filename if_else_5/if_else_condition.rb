@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def condition
   print 'Digite um numero: '
   num = gets.chomp.to_i
