@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 def password_validator
   print 'Insira uma senha: '
   password = gets.chomp.to_s
   if password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/)
-    puts "Senha válida"
+    puts 'Senha válida'
   else
-    puts "Senha inválida"
+    puts 'Senha inválida'
   end
 end
 
