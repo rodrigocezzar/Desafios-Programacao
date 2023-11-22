@@ -46,7 +46,6 @@ end
 hotel = Hotel.new
 
 loop do
-  # puts 'O que deseja? Reservar, Cancelar, Buscar, Sair  '
   puts 'Escolha uma opção:'
   puts '1. Reservar'
   puts '2. Cancelar'
