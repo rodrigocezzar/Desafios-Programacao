@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-def simular_lancamento_dado(lancamentos)
-  resultados = []
+def simulate_launch_dice(lancamentos)
+  results = []
 
   lancamentos.times do
-    resultado = rand(1..6)
-    resultados << resultado
+    result = rand(1..6)
+    results << result
   end
 
-  resultados
+  results
 end
 
 puts 'Lançamentos:'
-numero_lancamentos = gets.chomp.to_i
+launch_number = gets.chomp.to_i
 
-if numero_lancamentos.positive?
-  resultados = simular_lancamento_dado(numero_lancamentos)
-  puts resultados.join(', ')
+if launch_number.positive?
+  results = simulate_launch_dice(launch_number)
+  puts results.join(', ')
 else
   puts 'Por favor, insira um número válido de lançamentos.'
 end
