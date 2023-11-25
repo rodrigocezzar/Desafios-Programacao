@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-def simulate_launch_dice(lancamentos)
+def simulate_launch_dice(launchs)
   results = []
 
-  lancamentos.times do
+  launchs.times do
     result = rand(1..6)
     results << result
   end
